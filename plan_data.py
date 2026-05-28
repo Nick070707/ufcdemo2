@@ -82,16 +82,29 @@ def load_frame(use_cache: bool = True) -> tuple[
         return frame, meta["features"], meta["diff_features"], history, profile
 
     frame, features, diff_features, history, profile = _build_frame_fresh()
-    ARTIFACT_DIR.mkdir(exist_ok=True)
-    safe = frame.copy()
-    for col in safe.columns:
-        if safe[col].dtype == object:
-            safe[col] = safe[col].astype("string")
-    safe.to_parquet(FRAME_CACHE, index=False)
-    history.to_parquet(HISTORY_CACHE, index=False)
-    profile.to_parquet(PROFILE_CACHE, index=False)
-    joblib.dump({"features": features, "diff_features": diff_features}, FRAME_META_CACHE)
+    _try_persist_cache(frame, features, diff_features, history, profile)
     return frame, features, diff_features, history, profile
+
+
+def _try_persist_cache(frame, features, diff_features, history, profile) -> None:
+    """Пишет parquet/joblib кеш. На read-only FS (Streamlit Cloud) — тихо игнорит:
+    Streamlit @st.cache_resource всё равно держит результат в памяти процесса."""
+    try:
+        ARTIFACT_DIR.mkdir(exist_ok=True)
+        safe = frame.copy()
+        for col in safe.columns:
+            if safe[col].dtype == object:
+                safe[col] = safe[col].astype("string")
+        safe.to_parquet(FRAME_CACHE, index=False)
+        history.to_parquet(HISTORY_CACHE, index=False)
+        profile.to_parquet(PROFILE_CACHE, index=False)
+        joblib.dump(
+            {"features": features, "diff_features": diff_features},
+            FRAME_META_CACHE,
+        )
+    except OSError:
+        # read-only filesystem (cloud) — кешируемся только in-memory
+        pass
 
 
 @lru_cache(maxsize=1)
