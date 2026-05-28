@@ -24,7 +24,7 @@ from ufc_ablation_analysis import (
 from ufc_decay_pipeline import build_decay_frame
 
 
-ARTIFACT_DIR = Path("artifacts")
+ARTIFACT_DIR = Path("/")
 FRAME_CACHE = ARTIFACT_DIR / "_plan_decay_frame.parquet"
 FRAME_META_CACHE = ARTIFACT_DIR / "_plan_decay_meta.joblib"
 HGB_ARTIFACT = ARTIFACT_DIR / "ufc_decay_hist_gradient_boosting_sigmoid_calibrated.joblib"
