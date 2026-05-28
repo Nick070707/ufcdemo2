@@ -1,0 +1,647 @@
+{
+  "k": 8,
+  "archetypes": [
+    {
+      "cluster_id": 0,
+      "name": "\u0440\u0430\u0437\u043d\u043e\u0441\u0442\u043e\u0440\u043e\u043d\u043d\u0438\u0439 \u0433\u0440\u044d\u043f\u043f\u043b\u0435\u0440",
+      "hint": "\u043a\u043e\u043c\u0431\u0438\u043d\u0438\u0440\u0443\u0435\u0442 \u0431\u043e\u0440\u044c\u0431\u0443 \u0438 \u043f\u0430\u0440\u0442\u0435\u0440 \u0431\u0435\u0437 \u044f\u0432\u043d\u043e\u0439 \u0434\u043e\u043c\u0438\u043d\u0430\u043d\u0442\u044b",
+      "score": 1.69,
+      "alternatives": [
+        {
+          "name": "\u0441\u0430\u0431\u043c\u0438\u0448\u043d-\u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0441\u0442",
+          "score": 1.51
+        },
+        {
+          "name": "\u0431\u043e\u0440\u0435\u0446-\u043a\u043e\u043d\u0442\u0440\u043e\u043b\u0451\u0440",
+          "score": 1.47
+        }
+      ],
+      "top_above_avg": [
+        {
+          "feature": "avg_ground_strike_share",
+          "z": 2.27,
+          "value": 0.451
+        },
+        {
+          "feature": "avg_control_minutes_per_15",
+          "z": 1.92,
+          "value": 6.842
+        },
+        {
+          "feature": "avg_takedowns_attempted_per_15",
+          "z": 1.62,
+          "value": 7.524
+        }
+      ],
+      "top_below_avg": [
+        {
+          "feature": "avg_distance_strike_share",
+          "z": -1.97,
+          "value": 0.415
+        },
+        {
+          "feature": "avg_sig_strikes_absorbed_per_min",
+          "z": -1.38,
+          "value": 1.987
+        },
+        {
+          "feature": "avg_striking_defense",
+          "z": -0.81,
+          "value": 0.507
+        }
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "name": "\u0442\u0435\u0440\u043f\u0435\u043b\u0438\u0432\u044b\u0439 \u0440\u0435\u0448\u0430\u0442\u0435\u043b\u044c",
+      "hint": "\u0442\u044f\u043d\u0435\u0442 \u0432 \u0440\u0435\u0448\u0435\u043d\u0438\u0435, \u043d\u0438\u0437\u043a\u0438\u0439 \u0442\u0435\u043c\u043f",
+      "score": 0.72,
+      "alternatives": [
+        {
+          "name": "\u0437\u0430\u0449\u0438\u0442\u043d\u044b\u0439 \u0430\u0443\u0442\u0444\u0430\u0439\u0442\u0435\u0440",
+          "score": 0.64
+        },
+        {
+          "name": "\u0442\u0435\u043c\u043f\u043e\u0432\u0438\u043a-\u0448\u0442\u0443\u0440\u043c\u043e\u0432\u0438\u043a",
+          "score": 0.29
+        }
+      ],
+      "top_above_avg": [
+        {
+          "feature": "avg_striking_defense",
+          "z": 1.14,
+          "value": 0.577
+        },
+        {
+          "feature": "avg_fight_duration_min",
+          "z": 1.0,
+          "value": 11.657
+        },
+        {
+          "feature": "avg_distance_strike_share",
+          "z": 0.99,
+          "value": 0.88
+        }
+      ],
+      "top_below_avg": [
+        {
+          "feature": "avg_striking_accuracy",
+          "z": -1.34,
+          "value": 0.397
+        },
+        {
+          "feature": "avg_clinch_strike_share",
+          "z": -0.98,
+          "value": 0.063
+        },
+        {
+          "feature": "avg_ground_strike_share",
+          "z": -0.79,
+          "value": 0.057
+        }
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "name": "\u043b\u043e\u0443-\u043a\u0438\u043a\u0435\u0440",
+      "hint": "\u0430\u043a\u0446\u0435\u043d\u0442 \u043d\u0430 \u0443\u0434\u0430\u0440\u044b \u043f\u043e \u043d\u043e\u0433\u0430\u043c",
+      "score": 1.27,
+      "alternatives": [
+        {
+          "name": "\u0437\u0430\u0449\u0438\u0442\u043d\u044b\u0439 \u0430\u0443\u0442\u0444\u0430\u0439\u0442\u0435\u0440",
+          "score": 0.59
+        },
+        {
+          "name": "\u0442\u0435\u0440\u043f\u0435\u043b\u0438\u0432\u044b\u0439 \u0440\u0435\u0448\u0430\u0442\u0435\u043b\u044c",
+          "score": 0.43
+        }
+      ],
+      "top_above_avg": [
+        {
+          "feature": "avg_leg_strike_share",
+          "z": 1.51,
+          "value": 0.141
+        },
+        {
+          "feature": "avg_fight_duration_min",
+          "z": 1.06,
+          "value": 11.805
+        },
+        {
+          "feature": "avg_striking_defense",
+          "z": 0.98,
+          "value": 0.571
+        }
+      ],
+      "top_below_avg": [
+        {
+          "feature": "avg_head_strike_share",
+          "z": -1.11,
+          "value": 0.687
+        },
+        {
+          "feature": "avg_submissions_attempted_per_15",
+          "z": -0.9,
+          "value": 0.384
+        },
+        {
+          "feature": "avg_ground_strike_share",
+          "z": -0.7,
+          "value": 0.068
+        }
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "name": "\u043d\u043e\u043a\u0430\u0443\u0442\u0451\u0440",
+      "hint": "\u0432\u044b\u0441\u043e\u043a\u0438\u0439 KD rate \u043d\u0430 \u0434\u0438\u0441\u0442\u0430\u043d\u0446\u0438\u0438, \u0437\u0430\u043a\u0430\u043d\u0447\u0438\u0432\u0430\u0435\u0442 \u0440\u0430\u043d\u043e",
+      "score": 1.59,
+      "alternatives": [
+        {
+          "name": "\u0442\u0435\u043c\u043f\u043e\u0432\u0438\u043a-\u0448\u0442\u0443\u0440\u043c\u043e\u0432\u0438\u043a",
+          "score": 0.52
+        },
+        {
+          "name": "\u0437\u0430\u0449\u0438\u0442\u043d\u044b\u0439 \u0430\u0443\u0442\u0444\u0430\u0439\u0442\u0435\u0440",
+          "score": 0.08
+        }
+      ],
+      "top_above_avg": [
+        {
+          "feature": "avg_knockdowns_per_15",
+          "z": 2.43,
+          "value": 1.915
+        },
+        {
+          "feature": "avg_takedown_accuracy",
+          "z": 1.82,
+          "value": 0.619
+        },
+        {
+          "feature": "avg_sig_strikes_landed_per_min",
+          "z": 1.12,
+          "value": 4.664
+        }
+      ],
+      "top_below_avg": [
+        {
+          "feature": "avg_fight_duration_min",
+          "z": -1.65,
+          "value": 5.427
+        },
+        {
+          "feature": "avg_takedowns_attempted_per_15",
+          "z": -1.0,
+          "value": 2.081
+        },
+        {
+          "feature": "avg_leg_strike_share",
+          "z": -0.92,
+          "value": 0.057
+        }
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "name": "\u0441\u0430\u0431\u043c\u0438\u0448\u043d-\u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0441\u0442",
+      "hint": "\u043c\u043d\u043e\u0433\u043e \u043f\u043e\u043f\u044b\u0442\u043e\u043a \u0441\u0430\u0431\u043c\u0438\u0448\u0435\u043d\u0430, \u0440\u0430\u0431\u043e\u0442\u0430 \u0432 \u043f\u0430\u0440\u0442\u0435\u0440\u0435",
+      "score": 0.97,
+      "alternatives": [
+        {
+          "name": "\u0440\u0430\u0437\u043d\u043e\u0441\u0442\u043e\u0440\u043e\u043d\u043d\u0438\u0439 \u0433\u0440\u044d\u043f\u043f\u043b\u0435\u0440",
+          "score": 0.6
+        },
+        {
+          "name": "\u0442\u0435\u0440\u043f\u0435\u043b\u0438\u0432\u044b\u0439 \u0440\u0435\u0448\u0430\u0442\u0435\u043b\u044c",
+          "score": 0.49
+        }
+      ],
+      "top_above_avg": [
+        {
+          "feature": "avg_submissions_attempted_per_15",
+          "z": 1.73,
+          "value": 1.691
+        },
+        {
+          "feature": "avg_takedowns_attempted_per_15",
+          "z": 0.6,
+          "value": 5.392
+        },
+        {
+          "feature": "avg_head_strike_share",
+          "z": 0.47,
+          "value": 0.81
+        }
+      ],
+      "top_below_avg": [
+        {
+          "feature": "avg_takedown_defense",
+          "z": -2.23,
+          "value": 0.328
+        },
+        {
+          "feature": "avg_sig_strikes_landed_per_min",
+          "z": -1.33,
+          "value": 2.266
+        },
+        {
+          "feature": "avg_striking_accuracy",
+          "z": -1.19,
+          "value": 0.407
+        }
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "name": "\u0431\u043b\u0438\u0436\u043d\u0438\u0439 \u0431\u043e\u0435\u0446",
+      "hint": "\u043c\u043d\u043e\u0433\u043e \u043a\u043b\u0438\u043d\u0447\u0430 \u0438 \u0440\u0430\u0431\u043e\u0442\u044b \u043f\u043e \u043a\u043e\u0440\u043f\u0443\u0441\u0443, \u0434\u0430\u0432\u0438\u0442 \u0432\u043f\u043b\u043e\u0442\u043d\u0443\u044e",
+      "score": 1.88,
+      "alternatives": [
+        {
+          "name": "\u043b\u043e\u0443-\u043a\u0438\u043a\u0435\u0440",
+          "score": 1.22
+        },
+        {
+          "name": "\u043d\u043e\u043a\u0430\u0443\u0442\u0451\u0440",
+          "score": 0.21
+        }
+      ],
+      "top_above_avg": [
+        {
+          "feature": "avg_clinch_strike_share",
+          "z": 2.23,
+          "value": 0.237
+        },
+        {
+          "feature": "avg_body_strike_share",
+          "z": 2.17,
+          "value": 0.236
+        },
+        {
+          "feature": "avg_leg_strike_share",
+          "z": 1.65,
+          "value": 0.145
+        }
+      ],
+      "top_below_avg": [
+        {
+          "feature": "avg_head_strike_share",
+          "z": -1.98,
+          "value": 0.619
+        },
+        {
+          "feature": "avg_striking_defense",
+          "z": -1.57,
+          "value": 0.479
+        },
+        {
+          "feature": "avg_fight_duration_min",
+          "z": -0.89,
+          "value": 7.214
+        }
+      ]
+    },
+    {
+      "cluster_id": 6,
+      "name": "\u0431\u043e\u0440\u0435\u0446-\u043a\u043e\u043d\u0442\u0440\u043e\u043b\u0451\u0440",
+      "hint": "\u043c\u043d\u043e\u0433\u043e \u0442\u0435\u0439\u043a\u0434\u0430\u0443\u043d\u043e\u0432 \u0438 \u043a\u043e\u043d\u0442\u0440\u043e\u043b\u044f, \u0434\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u0432 \u043f\u0430\u0440\u0442\u0435\u0440\u0435",
+      "score": 0.66,
+      "alternatives": [
+        {
+          "name": "\u0442\u0435\u0440\u043f\u0435\u043b\u0438\u0432\u044b\u0439 \u0440\u0435\u0448\u0430\u0442\u0435\u043b\u044c",
+          "score": 0.64
+        },
+        {
+          "name": "\u0440\u0430\u0437\u043d\u043e\u0441\u0442\u043e\u0440\u043e\u043d\u043d\u0438\u0439 \u0433\u0440\u044d\u043f\u043f\u043b\u0435\u0440",
+          "score": 0.59
+        }
+      ],
+      "top_above_avg": [
+        {
+          "feature": "avg_takedowns_attempted_per_15",
+          "z": 1.18,
+          "value": 6.608
+        },
+        {
+          "feature": "avg_striking_defense",
+          "z": 1.07,
+          "value": 0.574
+        },
+        {
+          "feature": "avg_control_minutes_per_15",
+          "z": 1.03,
+          "value": 5.273
+        }
+      ],
+      "top_below_avg": [
+        {
+          "feature": "avg_sig_strikes_absorbed_per_min",
+          "z": -0.71,
+          "value": 2.618
+        },
+        {
+          "feature": "avg_sig_strikes_landed_per_min",
+          "z": -0.59,
+          "value": 2.992
+        },
+        {
+          "feature": "avg_knockdowns_per_15",
+          "z": -0.5,
+          "value": 0.265
+        }
+      ]
+    },
+    {
+      "cluster_id": 7,
+      "name": "\u0442\u0435\u043c\u043f\u043e\u0432\u0438\u043a-\u0448\u0442\u0443\u0440\u043c\u043e\u0432\u0438\u043a",
+      "hint": "\u0432\u044b\u0441\u043e\u043a\u0438\u0439 \u0442\u0435\u043c\u043f \u0443\u0434\u0430\u0440\u043e\u0432 \u043d\u0430 \u0434\u0438\u0441\u0442\u0430\u043d\u0446\u0438\u0438",
+      "score": 0.83,
+      "alternatives": [
+        {
+          "name": "\u043d\u043e\u043a\u0430\u0443\u0442\u0451\u0440",
+          "score": -0.01
+        },
+        {
+          "name": "\u043b\u043e\u0443-\u043a\u0438\u043a\u0435\u0440",
+          "score": -0.1
+        }
+      ],
+      "top_above_avg": [
+        {
+          "feature": "avg_sig_strikes_absorbed_per_min",
+          "z": 2.05,
+          "value": 5.226
+        },
+        {
+          "feature": "avg_sig_strikes_landed_per_min",
+          "z": 1.66,
+          "value": 5.197
+        },
+        {
+          "feature": "avg_distance_strike_share",
+          "z": 0.95,
+          "value": 0.874
+        }
+      ],
+      "top_below_avg": [
+        {
+          "feature": "avg_takedown_accuracy",
+          "z": -1.39,
+          "value": 0.298
+        },
+        {
+          "feature": "avg_submissions_attempted_per_15",
+          "z": -1.02,
+          "value": 0.326
+        },
+        {
+          "feature": "avg_control_minutes_per_15",
+          "z": -0.93,
+          "value": 1.837
+        }
+      ]
+    }
+  ],
+  "cluster_size": {
+    "0": 70,
+    "1": 268,
+    "2": 244,
+    "3": 45,
+    "4": 122,
+    "5": 70,
+    "6": 229,
+    "7": 165
+  },
+  "n_fighters_clustered": 2615,
+  "n_fighters_full_signature": 1213,
+  "matchup_n_fights": [
+    [
+      47,
+      113,
+      45,
+      18,
+      76,
+      49,
+      67,
+      26
+    ],
+    [
+      64,
+      562,
+      363,
+      49,
+      171,
+      86,
+      300,
+      260
+    ],
+    [
+      68,
+      464,
+      366,
+      55,
+      129,
+      85,
+      300,
+      286
+    ],
+    [
+      15,
+      50,
+      40,
+      15,
+      28,
+      29,
+      47,
+      52
+    ],
+    [
+      55,
+      176,
+      108,
+      32,
+      108,
+      49,
+      128,
+      63
+    ],
+    [
+      41,
+      90,
+      61,
+      22,
+      66,
+      51,
+      66,
+      55
+    ],
+    [
+      96,
+      423,
+      323,
+      49,
+      234,
+      101,
+      333,
+      162
+    ],
+    [
+      23,
+      217,
+      237,
+      46,
+      59,
+      44,
+      116,
+      271
+    ]
+  ],
+  "matchup_f1_win_rate": [
+    [
+      0.915,
+      0.885,
+      0.733,
+      0.778,
+      0.895,
+      0.959,
+      0.642,
+      0.731
+    ],
+    [
+      0.672,
+      0.628,
+      0.532,
+      0.633,
+      0.702,
+      0.733,
+      0.517,
+      0.542
+    ],
+    [
+      0.676,
+      0.679,
+      0.571,
+      0.582,
+      0.744,
+      0.718,
+      0.59,
+      0.615
+    ],
+    [
+      0.933,
+      0.84,
+      0.625,
+      0.733,
+      0.857,
+      0.828,
+      0.681,
+      0.75
+    ],
+    [
+      0.745,
+      0.642,
+      0.481,
+      0.594,
+      0.741,
+      0.816,
+      0.516,
+      0.651
+    ],
+    [
+      0.707,
+      0.733,
+      0.443,
+      0.727,
+      0.803,
+      0.745,
+      0.485,
+      0.582
+    ],
+    [
+      0.792,
+      0.74,
+      0.638,
+      0.633,
+      0.863,
+      0.792,
+      0.598,
+      0.593
+    ],
+    [
+      0.609,
+      0.594,
+      0.523,
+      0.391,
+      0.712,
+      0.636,
+      0.509,
+      0.616
+    ]
+  ],
+  "centroids_sample_features": [
+    "avg_sig_strikes_landed_per_min",
+    "avg_sig_strikes_absorbed_per_min",
+    "avg_striking_accuracy",
+    "avg_striking_defense",
+    "avg_takedowns_attempted_per_15"
+  ],
+  "centroids_first_3_rows": [
+    {
+      "avg_sig_strikes_landed_per_min": 2.798,
+      "avg_sig_strikes_absorbed_per_min": 1.987,
+      "avg_striking_accuracy": 0.553,
+      "avg_striking_defense": 0.507,
+      "avg_takedowns_attempted_per_15": 7.524,
+      "avg_takedown_accuracy": 0.528,
+      "avg_takedown_defense": 0.585,
+      "avg_submissions_attempted_per_15": 1.38,
+      "avg_control_minutes_per_15": 6.842,
+      "avg_knockdowns_per_15": 0.225,
+      "avg_head_strike_share": 0.827,
+      "avg_body_strike_share": 0.109,
+      "avg_leg_strike_share": 0.065,
+      "avg_distance_strike_share": 0.415,
+      "avg_clinch_strike_share": 0.134,
+      "avg_ground_strike_share": 0.451,
+      "avg_fight_duration_min": 7.802
+    },
+    {
+      "avg_sig_strikes_landed_per_min": 3.436,
+      "avg_sig_strikes_absorbed_per_min": 3.61,
+      "avg_striking_accuracy": 0.397,
+      "avg_striking_defense": 0.577,
+      "avg_takedowns_attempted_per_15": 2.686,
+      "avg_takedown_accuracy": 0.419,
+      "avg_takedown_defense": 0.654,
+      "avg_submissions_attempted_per_15": 0.452,
+      "avg_control_minutes_per_15": 2.163,
+      "avg_knockdowns_per_15": 0.344,
+      "avg_head_strike_share": 0.825,
+      "avg_body_strike_share": 0.107,
+      "avg_leg_strike_share": 0.068,
+      "avg_distance_strike_share": 0.88,
+      "avg_clinch_strike_share": 0.063,
+      "avg_ground_strike_share": 0.057,
+      "avg_fight_duration_min": 11.657
+    },
+    {
+      "avg_sig_strikes_landed_per_min": 3.946,
+      "avg_sig_strikes_absorbed_per_min": 3.323,
+      "avg_striking_accuracy": 0.483,
+      "avg_striking_defense": 0.571,
+      "avg_takedowns_attempted_per_15": 3.102,
+      "avg_takedown_accuracy": 0.379,
+      "avg_takedown_defense": 0.655,
+      "avg_submissions_attempted_per_15": 0.384,
+      "avg_control_minutes_per_15": 2.407,
+      "avg_knockdowns_per_15": 0.35,
+      "avg_head_strike_share": 0.687,
+      "avg_body_strike_share": 0.173,
+      "avg_leg_strike_share": 0.141,
+      "avg_distance_strike_share": 0.843,
+      "avg_clinch_strike_share": 0.088,
+      "avg_ground_strike_share": 0.068,
+      "avg_fight_duration_min": 11.805
+    }
+  ]
+}
