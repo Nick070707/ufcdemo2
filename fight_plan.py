@@ -52,11 +52,19 @@ ENVELOPE_CACHE = ARTIFACT_DIR / "_plan_envelope.joblib"
 UFC_GLOBALS_CACHE = ARTIFACT_DIR / "_plan_ufc_globals.joblib"
 
 
+def _safe_joblib_dump(obj: Any, path) -> None:
+    """Жалобно записывает в кеш; на read-only FS (cloud) — тихо игнорит."""
+    try:
+        joblib.dump(obj, path)
+    except OSError:
+        pass
+
+
 def _load_envelope_cached(fights: pd.DataFrame):
     if ENVELOPE_CACHE.exists():
         return joblib.load(ENVELOPE_CACHE)
     per_fighter, global_env = build_envelope(fights)
-    joblib.dump((per_fighter, global_env), ENVELOPE_CACHE)
+    _safe_joblib_dump((per_fighter, global_env), ENVELOPE_CACHE)
     return per_fighter, global_env
 
 
@@ -64,7 +72,7 @@ def _load_ufc_globals_cached(idx: pd.DataFrame) -> dict[str, Any]:
     if UFC_GLOBALS_CACHE.exists():
         return joblib.load(UFC_GLOBALS_CACHE)
     g = compute_ufc_globals(idx)
-    joblib.dump(g, UFC_GLOBALS_CACHE)
+    _safe_joblib_dump(g, UFC_GLOBALS_CACHE)
     return g
 
 
@@ -500,3 +508,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
